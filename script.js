@@ -1,12 +1,25 @@
 $(document).ready(function(){
-var secretWord = "ScriptEd";
+console.log("works");
+   // var request = "https://192.168.1.2/api/OGIOGrBPRyn1AutXp3tLkZFIbMETdMaUCIBBkCL7/lights";  
+   // $.get(request, function(response){
+   //    var lightString = JSON.stringify(response);
+   //    var lightObj = JSON.parse(response);
+   //    console.log(lightObj);
+   //    //console.log(request["1"].state.on);
 
- 
+   // });
+   
+  $.ajax({
+      url: "https://192.168.1.2/api/OGIOGrBPRyn1AutXp3tLkZFIbMETdMaUCIBBkCL7/lights",
+      type: "GET",
+      success: function (response){
+        console.log(url);
 
-  $("button").click(function(){
-      var guess =$("#pass").val(); 
-      if(secretWord===guess){
-    $("#result").append("WOOOOOOOHHHH!!111! You guessed the secret word!");
+      },
+      error: function (response) {
+        console.log(response);
       }
-  });
+    });
+
+
 });
