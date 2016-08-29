@@ -1,0 +1,24 @@
+{
+  "name": "hue-app1",
+  "version": "1.0.0",
+  "description": "Philips Hue Light App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bijesse/hueApp1.git"
+  },
+  "author": "Tom Bijesse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bijesse/hueApp1/issues"
+  },
+  "homepage": "https://github.com/Bijesse/hueApp1#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2",
+    "request": "^2.74.0"
+  }
+}
